@@ -1,0 +1,44 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr'
+    source-dir: 'C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr'
+  board:
+    name: 'frdm_kl25z'
+    path:
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z'
+    qualifiers: 'mkl25z4'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/bindings'
+    files:
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts'
+    include-dirs:
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/include'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/include/zephyr'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/common'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/vendor'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/rx'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/x86'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/xtensa'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/sparc'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/riscv'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/posix'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/arm64'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/arm'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts/arc'
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Users/hsilv/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z_defconfig'
+     - 'C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr/prj.conf'
+    user-files:
+     - 'C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr/prj.conf'
+  toolchain:
+    name: 'gnuarmemb'
+    path: 'C:/Users/hsilv/.platformio/packages/toolchain-gccarmnoneeabi'
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: 'C:/Users/hsilv/.platformio/packages/framework-zephyr'
+version: '0.1.0'

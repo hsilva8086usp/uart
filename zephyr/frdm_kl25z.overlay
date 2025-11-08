@@ -1,6 +1,0 @@
-&uart0 {
-    status = "okay";
-    current-speed = <115200>;
-    tx-pin = <PTC4>;
-    rx-pin = <PTC3>;
-};

@@ -1,0 +1,1 @@
+"mcuboot":"C:/Users/hsilv/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot":"C:/Users/hsilv/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot/boot/zephyr/sysbuild"
