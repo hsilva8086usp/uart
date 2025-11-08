@@ -14,8 +14,8 @@
 		zephyr,flash-controller = &ftfa; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:13 */
 		zephyr,sram = &sram0;            /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:23 */
 		zephyr,flash = &flash0;          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:24 */
-		zephyr,console = &uart0;         /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:25 */
-		zephyr,shell-uart = &uart0;      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:26 */
+		zephyr,console = &uart0;         /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:3 */
+		zephyr,shell-uart = &uart0;      /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:4 */
 	};
 
 	/* node '/aliases' defined in framework-zephyr\dts\common\skeleton.dtsi:13 */
@@ -146,10 +146,10 @@
 			reg = < 0x4006a000 0xc >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:106 */
 			interrupts = < 0xc 0x0 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:107 */
 			clocks = < &sim 0x0 0x1034 0xa >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:108 */
-			status = "okay";                  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:118 */
-			current-speed = < 0x1c200 >;      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:119 */
-			pinctrl-0 = < &uart0_default >;   /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:120 */
-			pinctrl-names = "default";        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:121 */
+			status = "okay";                  /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:10 */
+			current-speed = < 0x1c200 >;      /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:11 */
+			pinctrl-0 = < &uart0_pins >;      /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:12 */
+			pinctrl-names = "default";        /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:13 */
 		};
 
 		/* node '/soc/adc@4003b000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:113 */
@@ -323,7 +323,6 @@
 
 		/* node '/pinctrl/uart0_default' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:30 */
 		uart0_default: uart0_default {
-			phandle = < 0x6 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:120 */
 
 			/* node '/pinctrl/uart0_default/group0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:31 */
 			group0 {
@@ -331,6 +330,19 @@
 				         < 0x800200 >;  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:32 */
 				drive-strength = "low"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:34 */
 				slew-rate = "slow";     /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:35 */
+			};
+		};
+
+		/* node '/pinctrl/uart0_pins' defined in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:17 */
+		uart0_pins: uart0_pins {
+			phandle = < 0x6 >; /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:12 */
+
+			/* node '/pinctrl/uart0_pins/group0' defined in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:18 */
+			group0 {
+				pinmux = < 0x4004b00c 0x4 >,
+				         < 0x4004b010 0x4 >; /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:21 */
+				drive-strength = "low";      /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:23 */
+				slew-rate = "fast";          /* in ..\..\OneDrive\Documentos\PlatformIO\Projects\uart\zephyr\frdm_kl25z.overlay:24 */
 			};
 		};
 	};

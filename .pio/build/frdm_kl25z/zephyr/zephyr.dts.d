@@ -21,4 +21,5 @@ empty_file.o: \
  C:/Users/hsilv/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
  C:/Users/hsilv/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi \
  C:/Users/hsilv/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts/nxp/kinetis/MKL25Z128VLK4-pinctrl.h \
- C:/Users/hsilv/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/input/input-event-codes.h
+ C:/Users/hsilv/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr/frdm_kl25z.overlay

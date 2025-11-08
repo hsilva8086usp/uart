@@ -459,4 +459,33 @@ zephyr_udc0: &usbotg {
  num-bidir-endpoints = <8>;
 };
 # 1 "<command-line>" 2
+# 1 "C:/Users/hsilv/OneDrive/Documentos/PlatformIO/Projects/uart/zephyr/frdm_kl25z.overlay" 1
+/ {
+    chosen {
+        zephyr,console = &uart0;
+        zephyr,shell-uart = &uart0;
+    };
+};
+
+
+&uart0 {
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart0_pins>;
+    pinctrl-names = "default";
+};
+
+&pinctrl {
+    uart0_pins: uart0_pins {
+        group0 {
+
+
+            pinmux = <0x4004B00C 0x4>,
+                     <0x4004B010 0x4>;
+            drive-strength = "low";
+            slew-rate = "fast";
+        };
+    };
+};
+# 1 "<command-line>" 2
 # 1 "C:/Users/hsilv/.platformio/packages/framework-zephyr/misc/empty_file.c"
